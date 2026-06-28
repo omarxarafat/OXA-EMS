@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OXA EMS - ISO 14001 Training</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="progress-bar"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">
+          <svg viewBox="0 0 36 36" width="30" height="30">
+            <defs>
+              <linearGradient id="logo-grad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#2e7d32"/>
+                <stop offset="100%" stop-color="#1b5e20"/>
+              </linearGradient>
+              <linearGradient id="logo-shine" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="rgba(255,255,255,0.25)"/>
+                <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+              </linearGradient>
+            </defs>
+            <circle cx="18" cy="18" r="16" fill="url(#logo-grad)"/>
+            <circle cx="18" cy="18" r="16" fill="url(#logo-shine)"/>
+            <circle cx="18" cy="18" r="14.5" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="0.8"/>
+            <circle cx="18" cy="18" r="15.5" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
+            <path d="M12 18l4 4 8-8" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <circle cx="18" cy="18" r="17" fill="none" stroke="var(--primary-dark)" stroke-width="1.5"
+              stroke-dasharray="4 3"/>
+          </svg>
+        </span>
+        <span data-en="OXA EMS" data-ar="OXA EMS">OXA EMS</span>
+      </div>
+      <nav>
+        <a href="#module1" data-en="Intro" data-ar="مقدمة">Intro</a>
+        <a href="#module3" data-en="Aspects" data-ar="الجوانب">Aspects</a>
+        <a href="#module7" data-en="Waste" data-ar="المخلفات">Waste</a>
+        <a href="#module9" data-en="Emergency" data-ar="الطوارئ">Emergency</a>
+        <a href="#scenarios" data-en="Scenarios" data-ar="سيناريوهات">Scenarios</a>
+        <a href="#quiz" data-en="Quiz" data-ar="اختبار">Quiz</a>
+      </nav>
+      <button id="lang-toggle" class="lang-btn" aria-label="Toggle language">
+        <span class="lang-text">العربية</span>
+        <span class="lang-indicator"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>
+        <span data-en="ISO 14001:2015" data-ar="الأيزو 14001:2015">ISO 14001:2015</span>
+      </h1>
+      <h2>
+        <span data-en="Environmental Management System — Employee Training" data-ar="نظام الإدارة البيئية — تدريب الموظفين">Environmental Management System — Employee Training</span>
+      </h2>
+      <p>
+        <span data-en="14 modules &middot; Real scenarios &middot; Knowledge check — Cable Manufacturing Facility"
+        data-ar="14 وحدة &middot; سيناريوهات واقعية &middot; اختبار المعرفة — مصنع الكابلات">
+        14 modules &middot; Real scenarios &middot; Knowledge check — Cable Manufacturing Facility
+        </span>
+      </p>
+      <a href="#module1" class="btn-primary">
+        <span data-en="Begin Training &#8595;" data-ar="ابدأ التدريب &#8595;">Begin Training &#8595;</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- MODULE 1: INTRODUCTION                                          -->
+  <!-- ============================================================ -->
+  <section id="module1" class="section">
+    <div class="container">
+      <div class="module-label"><span data-en="Module 1" data-ar="الوحدة 1">Module 1</span></div>
+      <h2 class="section-title">
+        <span data-en="Introduction to ISO 14001 &amp; the EMS" data-ar="مقدمة إلى الأيزو 14001 ونظام الإدارة البيئية">Introduction to ISO 14001 &amp; the EMS</span>
+      </h2>
+
+      <div class="card">
+        <h3>
+          <span data-en="What is an Environmental Management System?" data-ar="ما هو نظام الإدارة البيئية؟">What is an Environmental Management System?</span>
+        </h3>
+        <p>
+          <span data-en="An Environmental Management System (EMS) is a structured framework that helps our factory manage its environmental responsibilities systematically. It is not just about compliance — it is about integrating environmental thinking into everything we do, from purchasing raw materials to shipping finished cables."
+          data-ar="نظام الإدارة البيئية (EMS) هو إطار منظم يساعد مصنعنا على إدارة مسؤولياته البيئية بشكل منهجي. لا يتعلق الأمر فقط بالامتثال — بل يتعلق بدمج التفكير البيئي في كل ما نقوم به، من شراء المواد الخام إلى شحن الكابلات النهائية.">
+          An Environmental Management System (EMS) is a structured framework that helps our factory manage its environmental responsibilities systematically. It is not just about compliance — it is about integrating environmental thinking into everything we do, from purchasing raw materials to shipping finished cables.
+          </span>
+        </p>
+      </div>
+
+      <div class="card" style="margin-top:20px">
+        <h3>
+          <span data-en="The PDCA Cycle — Our Engine for Improvement" data-ar="دورة PDCA — محركنا للتحسين">The PDCA Cycle — Our Engine for Improvement</span>
+        </h3>
+        <p>
+          <span data-en="ISO 14001 is built on the Plan-Do-Check-Act (PDCA) cycle. This is the heartbeat of our EMS:"
+          data-ar="الأيزو 14001 مبنية على دورة خطط-نفذ-راجع-صحح (PDCA). هذا هو نبض نظام الإدارة البيئية لدينا:">
+          ISO 14001 is built on the Plan-Do-Check-Act (PDCA) cycle. This is the heartbeat of our EMS:
+          </span>
+        </p>
+        <div class="pdca-grid">
+          <div class="pdca-box" style="--c:var(--primary)">
+            <h4><span data-en="Plan" data-ar="خطط">Plan</span></h4>
+            <p><span data-en="Identify environmental aspects, set objectives and targets, plan actions." data-ar="تحديد الجوانب البيئية، وضع الأهداف والغايات، تخطيط الإجراءات.">Identify environmental aspects, set objectives and targets, plan actions.</span></p>
+          </div>
+          <div class="pdca-box" style="--c:#1565c0">
+            <h4><span data-en="Do" data-ar="نفذ">Do</span></h4>
+            <p><span data-en="Implement operational controls, train employees, follow procedures." data-ar="تنفيذ ضوابط التشغيل، تدريب الموظفين، اتباع الإجراءات.">Implement operational controls, train employees, follow procedures.</span></p>
+          </div>
+          <div class="pdca-box" style="--c:#e65100">
+            <h4><span data-en="Check" data-ar="راجع">Check</span></h4>
+            <p><span data-en="Monitor performance, conduct audits, review compliance." data-ar="مراقبة الأداء، إجراء المراجعات، مراجعة الامتثال.">Monitor performance, conduct audits, review compliance.</span></p>
+          </div>
+          <div class="pdca-box" style="--c:#6a1b9a">
+            <h4><span data-en="Act" data-ar="صحح">Act</span></h4>
+            <p><span data-en="Take corrective actions, improve the system, celebrate successes." data-ar="اتخاذ إجراءات تصحيحية، تحسين النظام، الاحتفال بالنجاحات.">Take corrective actions, improve the system, celebrate successes.</span></p>
+          </div>
+        </div>
+        <div class="key-point" style="margin-top:16px">
+          <span data-en="Key point: The PDCA cycle never stops — it is a continuous loop of improvement."
+          data-ar="نقطة رئيسية: دورة PDCA لا تتوقف أبدًا — إنها حلقة مستمرة من التحسين.">
+          Key point: The PDCA cycle never stops — it is a continuous loop of improvement.
+          </span>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:20px">
+        <h3>
+          <span data-en="Benefits of ISO 14001 in Our Factory" data-ar="فوائد الأيزو 14001 في مصنعنا">Benefits of ISO 14001 in Our Factory</span>
+        </h3>
+        <ul class="check-list">
+          <li><span data-en="Reduced waste and raw material costs — less copper scrap, less PVC waste." data-ar="تقليل المخلفات وتكاليف المواد الخام — مخلفات نحاس أقل، مخلفات PVC أقل.">Reduced waste and raw material costs — less copper scrap, less PVC waste.</span></li>
+          <li><span data-en="Energy savings through optimized production processes." data-ar="توفير الطاقة من خلال عمليات الإنتاج المحسّنة.">Energy savings through optimized production processes.</span></li>
+          <li><span data-en="Compliance with environmental laws — avoiding fines and penalties." data-ar="الامتثال للقوانين البيئية — تجنب الغرامات والعقوبات.">Compliance with environmental laws — avoiding fines and penalties.</span></li>
+          <li><span data-en="Improved reputation with customers, regulators, and the community." data-ar="تحسين السمعة لدى العملاء والجهات التنظيمية والمجتمع.">Improved reputation with customers, regulators, and the community.</span></li>
+          <li><span data-en="Safer workplace — fewer spills, accidents, and hazardous exposures." data-ar="مكان عمل أكثر أمانًا — انسكابات وحوادث وتعرضات خطرة أقل.">Safer workplace — fewer spills, accidents, and hazardous exposures.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- MODULE 2: ENVIRONMENTAL POLICY                                 -->
+  <!-- ============================================================ -->
+  <section id="module2" class="section bg-light">
+    <div class="container">
+      <div class="module-label"><span data-en="Module 2" data-ar="الوحدة 2">Module 2</span></div>
+      <h2 class="section-title">
+        <span data-en="Our Environmental Policy" data-ar="سياسيتنا البيئية">Our Environmental Policy</span>
+      </h2>
+
+      <div class="card policy-card">
+        <div class="quote-mark">&#10077;</div>
+        <p class="policy-text">
+          <span data-en="We are committed to preventing pollution, complying with all environmental legislation, continually improving our EMS, and using resources sustainably across all cable manufacturing operations — from raw material receiving in warehouses to final product dispatch."
+          data-ar="نحن ملتزمون بمنع التلوث والامتثال لجميع التشريعات البيئية والتحسين المستمر لنظام الإدارة البيئية لدينا واستخدام الموارد بشكل مستدام عبر جميع عمليات تصنيع الكابلات — من استلام المواد الخام في المخازن وحتى شحن المنتج النهائي.">
+          We are committed to preventing pollution, complying with all environmental legislation, continually improving our EMS, and using resources sustainably across all cable manufacturing operations — from raw material receiving in warehouses to final product dispatch.
+          </span>
+        </p>
+        <p class="policy-sub"><span data-en="— Management Team" data-ar="— فريق الإدارة">— Management Team</span></p>
+      </div>
+
+      <div class="grid-2" style="margin-top:24px">
+        <div class="card">
+          <h3><span data-en="What This Policy Means for You" data-ar="ماذا تعني لك هذه السياسة">What This Policy Means for You</span></h3>
+          <ul class="check-list">
+            <li><span data-en="Every employee is responsible for upholding this policy in their daily work." data-ar="كل موظف مسؤول عن التمسك بهذه السياسة في عمله اليومي.">Every employee is responsible for upholding this policy in their daily work.</span></li>
+            <li><span data-en="If you see something that contradicts this policy — speak up." data-ar="إذا رأيت شيئًا يتعارض مع هذه السياسة — تكلم.">If you see something that contradicts this policy — speak up.</span></li>
+            <li><span data-en="The policy is reviewed annually to ensure it stays relevant." data-ar="تتم مراجعة السياسة سنويًا لضمان بقائها ملائمة.">The policy is reviewed annually to ensure it stays relevant.</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span data-en="Our Five Core Commitments" data-ar="التزاماتنا الخمسة الأساسية">Our Five Core Commitments</span></h3>
+          <ol class="numbered-list">
+            <li><span data-en="Prevent pollution at the source." data-ar="منع التلوث من المصدر.">Prevent pollution at the source.</span></li>
+            <li><span data-en="Comply with all applicable environmental laws." data-ar="الامتثال لجميع القوانين البيئية المعمول بها.">Comply with all applicable environmental laws.</span></li>
+            <li><span data-en="Continually improve our EMS performance." data-ar="تحسين أداء نظام الإدارة البيئية لدينا باستمرار.">Continually improve our EMS performance.</span></li>
+            <li><span data-en="Use resources efficiently — energy, water, materials." data-ar="استخدام الموارد بكفاءة — الطاقة والمياه والمواد.">Use resources efficiently — energy, water, materials.</span></li>
+            <li><span data-en="Set and review environmental objectives annually." data-ar="وضع ومراجعة الأهداف البيئية سنويًا.">Set and review environmental objectives annually.</span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- MODULE 3: ENVIRONMENTAL ASPECTS & IMPACTS                      -->
+  <!-- ============================================================ -->
+  <section id="module3" class="section">
+    <div class="container">
+      <div class="module-label"><span data-en="Module 3" data-ar="الوحدة 3">Module 3</span></div>
+      <h2 class="section-title">
+        <span data-en="Environmental Aspects &amp; Impacts" data-ar="الجوانب والتأثيرات البيئية">Environmental Aspects &amp; Impacts</span>
+      </h2>
+
+      <div class="card">
+        <h3><span data-en="Understanding Aspects and Impacts" data-ar="فهم الجوانب والتأثيرات">Understanding Aspects and Impacts</span></h3>
+        <p>
+          <span data-en="An environmental aspect is any element of our activities, products, or services that can interact with the environment. The environmental impact is the change that occurs as a result."
+          data-ar="الجانب البيئي هو أي عنصر من أنشطتنا أو منتجاتنا أو خدماتنا يمكن أن يتفاعل مع البيئة. التأثير البيئي هو التغيير الذي يحدث نتيجة لذلك.">
+          An environmental aspect is any element of our activities, products, or services that can interact with the environment. The environmental impact is the change that occurs as a result.
+          </span>
+        </p>
+        <div class="example-box" style="margin-top:16px">
+          <strong><span data-en="Simple example:" data-ar="مثال بسيط:">Simple example:</span></strong>
+          <span data-en="Operating an extrusion machine (activity) → consumes electricity (aspect) → depletes natural resources and contributes to climate change (impact)."
+          data-ar="تشغيل آلة البثق (نشاط) → يستهلك الكهرباء (جانب) → يستنزف الموارد الطبيعية ويسهم في تغير المناخ (تأثير).">
+          Operating an extrusion machine (activity) → consumes electricity (aspect) → depletes natural resources and contributes to climate change (impact).
+          </span>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:20px">
+        <h3><span data-en="Three Conditions We Consider" data-ar="ثلاث حالات نأخذها في الاعتبار">Three Conditions We Consider</span></h3>
+        <div class="grid-3">
+          <div class="mini-card">
+            <h4><span data-en="Normal" data-ar="عادي">Normal</span></h4>
+            <p><span data-en="Routine operations — daily production, regular cleaning, scheduled maintenance." data-ar="العمليات الروتينية — الإنتاج اليومي، التنظيف المنتظم، الصيانة المجدولة.">Routine operations — daily production, regular cleaning, scheduled maintenance.</span></p>
+          </div>
+          <div class="mini-card">
+            <h4><span data-en="Abnormal" data-ar="غير عادي">Abnormal</span></h4>
+            <p><span data-en="Planned but non-routine — machine startups, shutdowns, maintenance shutdowns." data-ar="مخطط له لكنه غير روتيني — بدء تشغيل الآلات، إيقاف التشغيل، إيقاف الصيانة.">Planned but non-routine — machine startups, shutdowns, maintenance shutdowns.</span></p>
+          </div>
+          <div class="mini-card">
+            <h4><span data-en="Emergency" data-ar="طارئ">Emergency</span></h4>
+            <p><span data-en="Unplanned events — chemical spills, fires, equipment failures, leaks." data-ar="أحداث غير مخطط لها — انسكابات كيميائية، حرائق، أعطال معدات، تسريبات.">Unplanned events — chemical spills, fires, equipment failures, leaks.</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:20px">
+        <h3><span data-en="Our Factory — Key Aspects &amp; Impacts" data-ar="مصنعنا — الجوانب والتأثيرات الرئيسية">Our Factory — Key Aspects &amp; Impacts</span></h3>
+        <table class="aspects-table">
+          <thead>
+            <tr>
+              <th><span data-en="Activity" data-ar="النشاط">Activity</span></th>
+              <th><span data-en="Aspect" data-ar="الجانب">Aspect</span></th>
+              <th><span data-en="Impact" data-ar="التأثير">Impact</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><span data-en="Wire Drawing" data-ar="سحب الأسلاك">Wire Drawing</span></td><td><span data-en="Energy use, lubricant waste" data-ar="استخدام الطاقة، مخلفات التشحيم">Energy use, lubricant waste</span></td><td><span data-en="Resource depletion, soil contamination" data-ar="نضوب الموارد، تلوث التربة">Resource depletion, soil contamination</span></td></tr>
+            <tr><td><span data-en="Insulation Extrusion" data-ar="بثق العزل">Insulation Extrusion</span></td><td><span data-en="PVC/XLPE fumes, energy" data-ar="أبخرة PVC/XLPE، طاقة">PVC/XLPE fumes, energy</span></td><td><span data-en="Air pollution, global warming" data-ar="تلوث الهواء، الاحتباس الحراري">Air pollution, global warming</span></td></tr>
+            <tr><td><span data-en="Warehousing" data-ar="التخزين">Warehousing</span></td><td><span data-en="Chemical storage, space use" data-ar="تخزين المواد الكيميائية، استخدام المساحة">Chemical storage, space use</span></td><td><span data-en="Spill risk, land use" data-ar="خطر الانسكاب، استخدام الأرض">Spill risk, land use</span></td></tr>
+            <tr><td><span data-en="Scrap Handling" data-ar="التعامل مع السكراب">Scrap Handling</span></td><td><span data-en="Copper &amp; PVC scrap generation" data-ar="توليد مخلفات النحاس وPVC">Copper &amp; PVC scrap generation</span></td><td><span data-en="Waste to landfill" data-ar="مخلفات إلى المدفن">Waste to landfill</span></td></tr>
+            <tr><td><span data-en="Packaging &amp; Dispatch" data-ar="التغليف والشحن">Packaging &amp; Dispatch</span></td><td><span data-en="Wood, plastic, paper waste" data-ar="مخلفات الخشب والبلاستيك والورق">Wood, plastic, paper waste</span></td><td><span data-en="Deforestation, plastic pollution" data-ar="إزالة الغابات، تلوث البلاستيك">Deforestation, plastic pollution</span></td></tr>
+            <tr><td><span data-en="Cooling Towers" data-ar="أبراج التبريد">Cooling Towers</span></td><td><span data-en="Water consumption, chemical treatment" data-ar="استهلاك المياه، المعالجة الكيميائية">Water consumption, chemical treatment</span></td><td><span data-en="Water scarcity, chemical discharge" data-ar="ندرة المياه، التصريف الكيميائي">Water scarcity, chemical discharge</span></td></tr>
+            <tr><td><span data-en="Compressed Air System" data-ar="نظام الهواء المضغوط">Compressed Air System</span></td><td><span data-en="Energy loss through leaks" data-ar="فقدان الطاقة من خلال التسريبات">Energy loss through leaks</span></td><td><span data-en="Unnecessary energy consumption" data-ar="استهلاك غير ضروري للطاقة">Unnecessary energy consumption</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="key-point" style="margin-top:20px">
+        <span data-en="Remember: Before starting any new job or task, ask yourself — what are the environmental aspects? What could go wrong? How can I prevent it?"
+        data-ar="تذكر: قبل البدء في أي مهمة أو وظيفة جديدة، اسأل نفسك — ما هي الجوانب البيئية؟ ما الذي قد يحدث خطأ؟ كيف يمكنني منعه؟">
+        Remember: Before starting any new job or task, ask yourself — what are the environmental aspects? What could go wrong? How can I prevent it?
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- MODULE 4: LEGAL & OTHER REQUIREMENTS                           -->
+  <!-- ============================================================ -->
+  <section id="module4" class="section bg-light">
+    <div class="container">
+      <div class="module-label"><span data-en="Module 4" data-ar="الوحدة 4">Module 4</span></div>
+      <h2 class="section-title">
+        <span data-en="Legal &amp; Other Requirements" data-ar="المتطلبات القانونية وغيرها">Legal &amp; Other Requirements</span>
+      </h2>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3><span data-en="Applicable Environmental Laws" data-ar="القوانين البيئية المعمول بها">Applicable Environmental Laws</span></h3>
+          <p><span data-en="Our factory must comply with a wide range of environmental regulations, including:"
+          data-ar="يجب أن يمتثل مصنعنا لمجموعة واسعة من اللوائح البيئية، بما في ذلك:">
+          Our factory must comply with a wide range of environmental regulations, including:
+          </span></p>
+          <ul class="check-list">
+            <li><span data-en="Waste management and disposal regulations." data-ar="لوائح إدارة المخلفات والتخلص منها.">Waste management and disposal regulations.</span></li>
+            <li><span data-en="Air emission limits for production processes." data-ar="حدود الانبعاثات الهوائية لعمليات الإنتاج.">Air emission limits for production processes.</span></li>
+            <li><span data-en="Wastewater discharge standards." data-ar="معايير تصريف مياه الصرف.">Wastewater discharge standards.</span></li>
+            <li><span data-en="Chemical storage and hazardous materials handling." data-ar="تخزين المواد الكيميائية ومناولة المواد الخطرة.">Chemical storage and hazardous materials handling.</span></li>
+            <li><span data-en="Noise control regulations for industrial areas." data-ar="لوائح التحكم في الضوضاء للمناطق الصناعية.">Noise control regulations for industrial areas.</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span data-en="How We Stay Compliant" data-ar="كيف نبقى ملتزمين">How We Stay Compliant</span></h3>
+          <ul class="check-list">
+            <li><span data-en="A legal register is maintained and updated regularly." data-ar="يتم الاحتفاظ بسجل قانوني وتحديثه بانتظام.">A legal register is maintained and updated regularly.</span></li>
+            <li><span data-en="Periodic compliance evaluations are conducted." data-ar="يتم إجراء تقييمات دورية للامتثال.">Periodic compliance evaluations are conducted.</span></li>
+            <li><span data-en="All permits and licenses are tracked for renewal." data-ar="يتم تتبع جميع التصاريح والتراخيص للتجديد.">All permits and licenses are tracked for renewal.</span></li>
+            <li><span data-en="Employees are informed of legal requirements relevant to their work." data-ar="يتم إبلاغ الموظفين بالمتطلبات القانونية ذات الصلة بعملهم.">Employees are informed of legal requirements relevant to their work.</span></li>
+          </ul>
+          <div class="key-point" style="margin-top:12px;font-size:0.9rem">
+            <span data-en="If you are unsure about a legal requirement — ask your supervisor or the EHS team."
+            data-ar="إذا لم تكن متأكدًا من متطلب قانوني — اسأل مشرفك أو فريق البيئة والسلامة.">
+            If you are unsure about a legal requirement — ask your supervisor or the EHS team.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- MODULE 5: OBJECTIVES, TARGETS & PROGRAMS                       -->
+  <!-- ============================================================ -->
+  <section id="module5" class="section">
+    <div class="container">
+      <div class="module-label"><span data-en="Module 5" data-ar="الوحدة 5">Module 5</span></div>
+      <h2 class="section-title">
+        <span data-en="Environmental Objectives, Targets &amp; Programs" data-ar="الأهداف والغايات والبرامج البيئية">Environmental Objectives, Targets &amp; Programs</span>
+      </h2>
+
+      <div class="card">
+        <p>
+          <span data-en="Based on our significant environmental aspects and legal requirements, management sets annual environmental objectives. Each objective has measurable targets and an action plan."
+          data-ar="بناءً على جوانبنا البيئية الهامة والمتطلبات القانونية، تضع الإدارة أهدافًا بيئية سنوية. كل هدف له غايات قابلة للقياس وخطة عمل.">
+          Based on our significant environmental aspects and legal requirements, management sets annual environmental objectives. Each objective has measurable targets and an action plan.
+          </span>
+        </p>
+      </div>
+
+      <div class="card" style="margin-top:20px">
+        <h3><span data-en="Example — Our Current Objectives" data-ar="مثال — أهدافنا الحالية">Example — Our Current Objectives</span></h3>
+        <table class="aspects-table">
+          <thead>
+            <tr>
+              <th><span data-en="Objective" data-ar="الهدف">Objective</span></th>
+              <th><span data-en="Target" data-ar="الغاية">Target</span></th>
+              <th><span data-en="Program" data-ar="البرنامج">Program</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span data-en="Reduce copper scrap" data-ar="تقليل مخلفات النحاس">Reduce copper scrap</span></td>
+              <td><span data-en="15% reduction by year-end" data-ar="تقليل بنسبة 15% بنهاية العام">15% reduction by year-end</span></td>
+              <td><span data-en="Optimize drawing dies, train operators" data-ar="تحسين قوالب السحب، تدريب المشغلين">Optimize drawing dies, train operators</span></td>
+            </tr>
+            <tr>
+              <td><span data-en="Reduce energy consumption" data-ar="تقليل استهلاك الطاقة">Reduce energy consumption</span></td>
+              <td><span data-en="10% reduction per ton of cable" data-ar="تقليل 10% لكل طن كابلات">10% reduction per ton of cable</span></td>
+              <td><span data-en="LED lighting, compressor maintenance, awareness" data-ar="إضاءة LED، صيانة الضواغط، التوعية">LED lighting, compressor maintenance, awareness</span></td>
+            </tr>
+            <tr>
+              <td><span data-en="Improve waste segregation" data-ar="تحسين فرز المخلفات">Improve waste segregation</span></td>
+              <td><span data-en="Zero contamination in scrap bins" data-ar="عدم تلوث في حاويات المخلفات">Zero contamination in scrap bins</span></td>
+              <td><span data-en="New labeled bins, training, inspections" data-ar="حاويات جديدة مصنفة، تدريب، تفتيش">New labeled bins, training, inspections</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="key-point" style="margin-top:20px">
+        <span data-en="Your contribution matters — every kilogram of scrap saved and every kilowatt-hour conserved helps us reach our targets."
+        data-ar="مساهمتك مهمة — كل كيلوغرام من المخلفات يتم توفيره وكل كيلوواط ساعة يتم الحفاظ عليه يساعدنا في تحقيق غاياتنا.">
+        Your contribution matters — every kilogram of scrap saved and every kilowatt-hour conserved helps us reach our targets.
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- MODULE 6: OPERATIONAL CONTROL                                  -->
+  <!-- ============================================================ -->
+  <section id="module6" class="section bg-light">
+    <div class="container">
+      <div class="module-label"><span data-en="Module 6" data-ar="الوحدة 6">Module 6</span></div>
+      <h2 class="section-title">
+        <span data-en="Operational Control — Procedures &amp; Work Instructions" data-ar="التحكم التشغيلي — الإجراءات وتعليمات العمل">Operational Control — Procedures &amp; Work Instructions</span>
+      </h2>
+
+      <div class="card">
+        <p>
+          <span data-en="Operational controls are the specific procedures, work instructions, and practices that ensure our activities are carried out in a way that minimizes environmental impact. Every critical operation has a documented control."
+          data-ar="الضوابط التشغيلية هي الإجراءات المحددة وتعليمات العمل والممارسات التي تضمن تنفيذ أنشطتنا بطريقة تقلل التأثير البيئي. كل عملية حرجة لها تحكم موثق.">
+          Operational controls are the specific procedures, work instructions, and practices that ensure our activities are carried out in a way that minimizes environmental impact. Every critical operation has a documented control.
+          </span>
+        </p>
+      </div>
+
+      <div class="grid-2" style="margin-top:20px">
+        <div class="card">
+          <h3><span data-en="Chemical Receiving &amp; Storage" data-ar="استلام وتخزين المواد الكيميائية">Chemical Receiving &amp; Storage</span></h3>
+          <ol class="numbered-list">
+            <li><span data-en="Verify the chemical matches the purchase order." data-ar="التحقق من تطابق المادة الكيميائية مع أمر الشراء.">Verify the chemical matches the purchase order.</span></li>
+            <li><span data-en="Check container integrity — no leaks, no damage." data-ar="التحقق من سلامة الحاوية — لا تسريبات، لا تلف.">Check container integrity — no leaks, no damage.</span></li>
+            <li><span data-en="Ensure SDS is received and filed before storage." data-ar="التأكد من استلام صحيفة بيانات السلامة وحفظها قبل التخزين.">Ensure SDS is received and filed before storage.</span></li>
+            <li><span data-en="Store in designated area with secondary containment." data-ar="التخزين في المنطقة المخصصة مع احتواء ثانوي.">Store in designated area with secondary containment.</span></li>
+            <li><span data-en="Update the chemical register within 24 hours." data-ar="تحديث السجل الكيميائي في غضون 24 ساعة.">Update the chemical register within 24 hours.</span></li>
+          </ol>
+        </div>
+        <div class="card">
+          <h3><span data-en="Production Line Start-up" data-ar="بدء تشغيل خط الإنتاج">Production Line Start-up</span></h3>
+          <ol class="numbered-list">
+            <li><span data-en="Check all emission control equipment is operational." data-ar="التحقق من أن جميع معدات التحكم في الانبعاثات تعمل.">Check all emission control equipment is operational.</span></li>
+            <li><span data-en="Verify raw materials are correct and within spec." data-ar="التحقق من أن المواد الخام صحيحة وفي المواصفات.">Verify raw materials are correct and within spec.</span></li>
+            <li><span data-en="Ensure waste collection bins are in place and empty." data-ar="التأكد من وجود حاويات جمع المخلفات فارغة في مكانها.">Ensure waste collection bins are in place and empty.</span></li>
+            <li><span data-en="Document pre-start inspection in the logbook." data-ar="توثيق فحص ما قبل التشغيل في سجل.">Document pre-start inspection in the logbook.</span></li>
+            <li><span data-en="Report any abnormalities immediately." data-ar="الإبلاغ عن أي انحرافات فورًا.">Report any abnormalities immediately.</span></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="key-point" style="margin-top:20px">
+        <span data-en="NEVER bypass an operational control. If a control is not working, stop the job and report it."
+        data-ar="لا تتجاوز أبدًا التحكم التشغيلي. إذا كان التحكم لا يعمل، أوقف المهمة وأبلغ عنها.">
+        NEVER bypass an operational control. If a control is not working, stop the job and report it.
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- MODULE 7: WASTE & SCRAP MANAGEMENT                             -->
+  <!-- ============================================================ -->
+  <section id="module7" class="section">
+    <div class="container">
+      <div class="module-label"><span data-en="Module 7" data-ar="الوحدة 7">Module 7</span></div>
+      <h2 class="section-title">
+        <span data-en="Waste &amp; Scrap Management" data-ar="إدارة المخلفات والسكراب">Waste &amp; Scrap Management</span>
+      </h2>
+
+      <div class="card">
+        <h3><span data-en="Waste Classification in Our Factory" data-ar="تصنيف المخلفات في مصنعنا">Waste Classification in Our Factory</span></h3>
+        <p><span data-en="We classify waste into three main categories to ensure proper handling and disposal:"
+        data-ar="نصنف المخلفات إلى ثلاث فئات رئيسية لضمان المناولة والتخلص المناسبين:">
+        We classify waste into three main categories to ensure proper handling and disposal:
+        </span></p>
+        <table class="aspects-table" style="margin-top:12px">
+          <thead>
+            <tr><th><span data-en="Type" data-ar="النوع">Type</span></th><th><span data-en="Examples" data-ar="أمثلة">Examples</span></th><th><span data-en="Disposal" data-ar="التخلص">Disposal</span></th></tr>
+          </thead>
+          <tbody>
+            <tr><td><span data-en="Non-Hazardous" data-ar="غير خطرة">Non-Hazardous</span></td><td><span data-en="Copper scrap, PVC trimmings, paper, wood pallets" data-ar="مخلفات النحاس، قصاصات PVC، الورق، المنصات الخشبية">Copper scrap, PVC trimmings, paper, wood pallets</span></td><td><span data-en="Recycling or licensed waste contractor" data-ar="إعادة التدوير أو مقاول المخلفات المرخص">Recycling or licensed waste contractor</span></td></tr>
+            <tr><td><span data-en="Hazardous" data-ar="خطرة">Hazardous</span></td><td><span data-en="Used oil, chemical rags, lubricant containers, spent filters" data-ar="الزيوت المستعملة، الخرق الكيميائية، حاويات التشحيم، المرشحات المستهلكة">Used oil, chemical rags, lubricant containers, spent filters</span></td><td><span data-en="Licensed hazardous waste contractor only" data-ar="مقاول مخلفات خطرة مرخص فقط">Licensed hazardous waste contractor only</span></td></tr>
+            <tr><td><span data-en="General" data-ar="عام">General</span></td><td><span data-en="Office waste, food packaging, non-contaminated materials" data-ar="مخلفات المكاتب، تغليف الطعام، المواد غير الملوثة">Office waste, food packaging, non-contaminated materials</span></td><td><span data-en="Municipal waste collection" data-ar="جمع المخلفات البلدية">Municipal waste collection</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="grid-2" style="margin-top:20px">
+        <div class="card">
+          <h3><span class="icon-inline"><svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="13" rx="1"/><path d="M3 8l9-6 9 6"/><path d="M9 12h6v9H9z"/></svg></span><span data-en="Warehouses" data-ar="المخازن">Warehouses</span></h3>
+          <ul class="check-list">
+            <li><span data-en="Segregate chemicals by compatibility — acids separate from bases, oxidizers separate from flammables." data-ar="فصل المواد الكيميائية حسب التوافق — الأحماض منفصلة عن القواعد، المؤكسدات منفصلة عن القابلة للاشتعال.">Segregate chemicals by compatibility — acids separate from bases, oxidizers separate from flammables.</span></li>
+            <li><span data-en="All liquid chemicals must have secondary containment (drip trays, bunded pallets)." data-ar="جميع المواد الكيميائية السائلة يجب أن يكون لها احتواء ثانوي (صواني تنقيط، منصات نقالة بحواجز).">All liquid chemicals must have secondary containment (drip trays, bunded pallets).</span></li>
+            <li><span data-en="Inspect storage areas weekly for leaks, corrosion, or damaged containers." data-ar="تفقد مناطق التخزين أسبوعيًا بحثًا عن تسريبات أو تآكل أو حاويات تالفة.">Inspect storage areas weekly for leaks, corrosion, or damaged containers.</span></li>
+            <li><span data-en="Keep minimum 1 meter clearance between chemical shelves and walls." data-ar="الحفاظ على مسافة متر واحد على الأقل بين أرفف المواد الكيميائية والجدران.">Keep minimum 1 meter clearance between chemical shelves and walls.</span></li>
+            <li><span data-en="Flammable storage must be in fire-rated cabinets with ventilation." data-ar="تخزين المواد القابلة للاشتعال يجب أن يكون في خزائن مقاومة للحريق مع تهوية.">Flammable storage must be in fire-rated cabinets with ventilation.</span></li>
+            <li><span data-en="Never store incompatible chemicals together — refer to the segregation chart." data-ar="لا تخزن أبدًا المواد الكيميائية غير المتوافقة معًا — ارجع إلى مخطط الفصل.">Never store incompatible chemicals together — refer to the segregation chart.</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span class="icon-inline"><svg viewBox="0 0 24 24"><path d="M4 7h16"/><path d="M6 7v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7"/><path d="M9 7V4h6v3"/><path d="M10 11v5"/><path d="M14 11v5"/></svg></span><span data-en="Scrap Handling" data-ar="التعامل مع السكراب">Scrap Handling</span></h3>
+          <ul class="check-list">
+            <li><span data-en="Scrap copper is a valuable resource — keep it clean and separate from other waste." data-ar="مخلفات النحاس هي مورد قيم — حافظ عليها نظيفة ومنفصلة عن المخلفات الأخرى.">Scrap copper is a valuable resource — keep it clean and separate from other waste.</span></li>
+            <li><span data-en="PVC scrap goes into dedicated clear bags for recycling." data-ar="مخلفات PVC توضع في أكياس شفافة مخصصة لإعادة التدوير.">PVC scrap goes into dedicated clear bags for recycling.</span></li>
+            <li><span data-en="NEVER put hazardous waste (oily rags, chemical containers) into scrap bins." data-ar="لا تضع أبدًا المخلفات الخطرة (الخرق الزيتية، الحاويات الكيميائية) في حاويات المخلفات.">NEVER put hazardous waste (oily rags, chemical containers) into scrap bins.</span></li>
+            <li><span data-en="All scrap must be weighed and recorded before leaving the factory." data-ar="جميع المخلفات يجب وزنها وتسجيلها قبل مغادرة المصنع.">All scrap must be weighed and recorded before leaving the factory.</span></li>
+            <li><span data-en="Report any scrap bin contamination immediately to your supervisor." data-ar="أبلغ عن أي تلوث في حاوية المخلفات فورًا إلى مشرفك.">Report any scrap bin contamination immediately to your supervisor.</span></li>
+            <li><span data-en="Use separate bins: blue = copper, green = PVC, yellow = general waste." data-ar="استخدم حاويات منفصلة: أزرق = نحاس، أخضر = PVC، أصفر = مخلفات عامة.">Use separate bins: blue = copper, green = PVC, yellow = general waste.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="waste-hierarchy" style="margin-top:40px">
+        <h3 style="text-align:center;margin-bottom:20px">
+          <span data-en="Waste Hierarchy — Our Priority Order" data-ar="التسلسل الهرمي للمخلفات — ترتيب أولوياتنا">Waste Hierarchy — Our Priority Order</span>
+        </h3>
+        <div class="hierarchy-steps">
+          <div class="step" style="--level:1"><span class="step-label"><span data-en="Prevent" data-ar="منع">Prevent</span></span></div>
+          <div class="step" style="--level:2"><span class="step-label"><span data-en="Reduce" data-ar="تقليل">Reduce</span></span></div>
+          <div class="step" style="--level:3"><span class="step-label"><span data-en="Reuse" data-ar="إعادة الاستخدام">Reuse</span></span></div>
+          <div class="step" style="--level:4"><span class="step-label"><span data-en="Recycle" data-ar="إعادة التدوير">Recycle</span></span></div>
+          <div class="step" style="--level:5"><span class="step-label"><span data-en="Dispose" data-ar="التخلص">Dispose</span></span></div>
+        </div>
+        <p style="text-align:center;margin-top:16px;color:var(--text-light);font-size:0.9rem">
+          <span data-en="Our goal is always to move up the hierarchy — prevention is best, disposal is last resort."
+          data-ar="هدفنا دائمًا هو الصعود في التسلسل الهرمي — المنع هو الأفضل، التخلص هو الحل الأخير.">
+          Our goal is always to move up the hierarchy — prevention is best, disposal is last resort.
+          </span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- MODULE 8: WAREHOUSES & CHEMICAL MANAGEMENT                     -->
+  <!-- ============================================================ -->
+  <section id="module8" class="section bg-light">
+    <div class="container">
+      <div class="module-label"><span data-en="Module 8" data-ar="الوحدة 8">Module 8</span></div>
+      <h2 class="section-title">
+        <span data-en="Warehouses &amp; Chemical Management" data-ar="المخازن وإدارة المواد الكيميائية">Warehouses &amp; Chemical Management</span>
+      </h2>
+
+      <div class="card">
+        <h3><span data-en="Chemical Storage Best Practices" data-ar="أفضل ممارسات تخزين المواد الكيميائية">Chemical Storage Best Practices</span></h3>
+        <div class="grid-2">
+          <div>
+            <ul class="check-list">
+              <li><span data-en="Store all chemicals in designated areas only." data-ar="تخزين جميع المواد الكيميائية في المناطق المخصصة فقط.">Store all chemicals in designated areas only.</span></li>
+              <li><span data-en="Maintain a current chemical inventory with quantities." data-ar="الحفاظ على جرد كيميائي محدث بالكميات.">Maintain a current chemical inventory with quantities.</span></li>
+              <li><span data-en="All containers must be labeled with the full chemical name and hazard pictograms." data-ar="جميع الحاويات يجب أن تكون موسومة باسم المادة الكيميائية الكامل ورسوم الخطر.">All containers must be labeled with the full chemical name and hazard pictograms.</span></li>
+              <li><span data-en="Keep SDS binder in an accessible location — know where it is." data-ar="الاحتفاظ بمجلد صحائف بيانات السلامة في مكان يسهل الوصول إليه — اعرف مكانه.">Keep SDS binder in an accessible location — know where it is.</span></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="check-list">
+              <li><span data-en="Incompatible chemicals must be stored separately (e.g., acids vs. chlorine compounds)." data-ar="المواد الكيميائية غير المتوافقة يجب تخزينها بشكل منفصل (مثل الأحماض مقابل مركبات الكلور).">Incompatible chemicals must be stored separately (e.g., acids vs. chlorine compounds).</span></li>
+              <li><span data-en="Spill kits must be located within 10 meters of chemical storage areas." data-ar="يجب أن تكون أطقم الانسكاب على بعد 10 أمتار من مناطق تخزين المواد الكيميائية.">Spill kits must be located within 10 meters of chemical storage areas.</span></li>
+              <li><span data-en="Weekly inspections are mandatory — use the chemical inspection checklist." data-ar="التفقد الأسبوعي إلزامي — استخدم قائمة تفقد المواد الكيميائية.">Weekly inspections are mandatory — use the chemical inspection checklist.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:20px">
+        <h3><span data-en="How to Read a Safety Data Sheet (SDS)" data-ar="كيف تقرأ صحيفة بيانات السلامة (SDS)">How to Read a Safety Data Sheet (SDS)</span></h3>
+        <p><span data-en="An SDS has 16 sections. As an operator, the most important sections to know are:"
+        data-ar="تحتوي صحيفة بيانات السلامة على 16 قسمًا. كمشغل، أهم الأقسام التي يجب معرفتها هي:">
+        An SDS has 16 sections. As an operator, the most important sections to know are:
+        </span></p>
+        <table class="aspects-table" style="margin-top:12px">
+          <thead><tr><th><span data-en="Section" data-ar="القسم">Section</span></th><th><span data-en="What It Tells You" data-ar="ماذا يخبرك">What It Tells You</span></th></tr></thead>
+          <tbody>
+            <tr><td><span data-en="Section 2 — Hazards" data-ar="القسم 2 — المخاطر">Section 2 — Hazards</span></td><td><span data-en="Hazard classification, pictograms, signal words, precautionary statements." data-ar="تصنيف الخطر، الرسوم البيانية، كلمات الإشارة، عبارات الحيطة.">Hazard classification, pictograms, signal words, precautionary statements.</span></td></tr>
+            <tr><td><span data-en="Section 4 — First Aid" data-ar="القسم 4 — الإسعافات الأولية">Section 4 — First Aid</span></td><td><span data-en="What to do in case of exposure — inhalation, skin contact, eye contact, ingestion." data-ar="ماذا تفعل في حالة التعرض — الاستنشاق، ملامسة الجلد، ملامسة العين، الابتلاع.">What to do in case of exposure — inhalation, skin contact, eye contact, ingestion.</span></td></tr>
+            <tr><td><span data-en="Section 5 — Firefighting" data-ar="القسم 5 — مكافحة الحرائق">Section 5 — Firefighting</span></td><td><span data-en="Suitable extinguishing media, specific hazards, protective equipment." data-ar="وسائل الإطفاء المناسبة، المخاطر المحددة، معدات الحماية.">Suitable extinguishing media, specific hazards, protective equipment.</span></td></tr>
+            <tr><td><span data-en="Section 6 — Accidental Release" data-ar="القسم 6 — الإطلاق العرضي">Section 6 — Accidental Release</span></td><td><span data-en="Spill procedures, containment methods, clean-up instructions." data-ar="إجراءات الانسكاب، طرق الاحتواء، تعليمات التنظيف.">Spill procedures, containment methods, clean-up instructions.</span></td></tr>
+            <tr><td><span data-en="Section 7 — Handling & Storage" data-ar="القسم 7 — المناولة والتخزين">Section 7 — Handling &amp; Storage</span></td><td><span data-en="Safe handling practices, storage conditions, incompatibilities." data-ar="ممارسات المناولة الآمنة، ظروف التخزين، عدم التوافق.">Safe handling practices, storage conditions, incompatibilities.</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card" style="margin-top:20px">
+        <h3><span data-en="Receiving New Chemicals — Step by Step" data-ar="استلام مواد كيميائية جديدة — خطوة بخطوة">Receiving New Chemicals — Step by Step</span></h3>
+        <div class="step-flow">
+          <div class="flow-item"><span class="flow-num">1</span><span data-en="Verify chemical &amp; quantity against delivery note" data-ar="التحقق من المادة الكيميائية والكمية مقابل إشعار التسليم">Verify chemical &amp; quantity against delivery note</span></div>
+          <div class="flow-item"><span class="flow-num">2</span><span data-en="Inspect container integrity" data-ar="تفقد سلامة الحاوية">Inspect container integrity</span></div>
+          <div class="flow-item"><span class="flow-num">3</span><span data-en="Obtain &amp; file SDS" data-ar="الحصول على صحيفة بيانات السلامة وحفظها">Obtain &amp; file SDS</span></div>
+          <div class="flow-item"><span class="flow-num">4</span><span data-en="Label container with EMS code" data-ar="وسم الحاوية برمز EMS">Label container with OXA EMS code</span></div>
+          <div class="flow-item"><span class="flow-num">5</span><span data-en="Store in correct location with secondary containment" data-ar="التخزين في الموقع الصحيح مع احتواء ثانوي">Store in correct location with secondary containment</span></div>
+          <div class="flow-item"><span class="flow-num">6</span><span data-en="Update chemical register" data-ar="تحديث السجل الكيميائي">Update chemical register</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- MODULE 9: EMERGENCY PREPAREDNESS & RESPONSE                    -->
+  <!-- ============================================================ -->
+  <section id="module9" class="section">
+    <div class="container">
+      <div class="module-label"><span data-en="Module 9" data-ar="الوحدة 9">Module 9</span></div>
+      <h2 class="section-title">
+        <span data-en="Emergency Preparedness &amp; Response" data-ar="التأهب والاستجابة للطوارئ">Emergency Preparedness &amp; Response</span>
+      </h2>
+
+      <div class="card" style="margin-bottom:24px">
+        <h3><span data-en="General Emergency Principles — R.A.C.E." data-ar="مبادئ الطوارئ العامة — R.A.C.E.">General Emergency Principles — R.A.C.E.</span></h3>
+        <div class="grid-4">
+          <div class="mini-card accent">
+            <h4><span data-en="Remove" data-ar="أزل">Remove</span></h4>
+            <p><span data-en="Remove people from danger" data-ar="أزل الأشخاص من الخطر">Remove people from danger</span></p>
+          </div>
+          <div class="mini-card accent">
+            <h4><span data-en="Alert" data-ar="أنذر">Alert</span></h4>
+            <p><span data-en="Alert others &amp; call for help" data-ar="أنذر الآخرين واطلب المساعدة">Alert others &amp; call for help</span></p>
+          </div>
+          <div class="mini-card accent">
+            <h4><span data-en="Contain" data-ar="احتواء">Contain</span></h4>
+            <p><span data-en="Contain the hazard if safe" data-ar="احتواء الخطر إذا كان آمنًا">Contain the hazard if safe</span></p>
+          </div>
+          <div class="mini-card accent">
+            <h4><span data-en="Evacuate" data-ar="إخلاء">Evacuate</span></h4>
+            <p><span data-en="Evacuate if necessary" data-ar="إخلاء إذا لزم الأمر">Evacuate if necessary</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card emergency-card">
+          <div class="emergency-header">
+            <span class="icon-inline"><svg viewBox="0 0 24 24"><path d="M9 2h6"/><path d="M15 2v7c0 1.5.8 2.8 2 3.5A5 5 0 0 1 12 17a5 5 0 0 1-5-4.5c1.2-.7 2-2 2-3.5V2"/><path d="M6 16c0 2.2 2.7 4 6 4s6-1.8 6-4"/></svg></span>
+            <span data-en="Chemical Spill" data-ar="الانسكاب الكيميائي">Chemical Spill</span>
+          </div>
+          <ol class="numbered-list">
+            <li><span data-en="R — Remove anyone from the immediate area." data-ar="أزل أي شخص من المنطقة المباشرة.">R — Remove anyone from the immediate area.</span></li>
+            <li><span data-en="A — Alert colleagues and supervisor. Call the emergency number." data-ar="أنذر الزملاء والمشرف. اتصل برقم الطوارئ.">A — Alert colleagues and supervisor. Call the emergency number.</span></li>
+            <li><span data-en="C — If trained and safe: use the spill kit to absorb and contain." data-ar="إذا كنت مدربًا وكان آمنًا: استخدم طقم الانسكاب للامتصاص والاحتواء.">C — If trained and safe: use the spill kit to absorb and contain.</span></li>
+            <li><span data-en="E — Evacuate if the spill is large or toxic fumes are present." data-ar="إخلاء إذا كان الانسكاب كبيرًا أو توجد أبخرة سامة.">E — Evacuate if the spill is large or toxic fumes are present.</span></li>
+          </ol>
+          <div class="key-point" style="margin-top:12px;font-size:0.85rem">
+            <span data-en="Spill kits are located at: warehouse entrance, extrusion area, chemical storage room."
+            data-ar="أطقم الانسكاب موجودة في: مدخل المخزن، منطقة البثق، غرفة تخزين المواد الكيميائية.">
+            Spill kits are located at: warehouse entrance, extrusion area, chemical storage room.
+            </span>
+          </div>
+        </div>
+
+        <div class="card emergency-card">
+          <div class="emergency-header">
+            <span class="icon-inline"><svg viewBox="0 0 24 24"><path d="M12 2C9 7 7 10 7 13a5 5 0 0 0 10 0c0-3-2-6-5-11z"/><path d="M12 16a3 3 0 0 0 3-3c0-1.5-1.5-4-3-6-1.5 2-3 4.5-3 6a3 3 0 0 0 3 3z"/></svg></span>
+            <span data-en="Fire" data-ar="الحريق">Fire</span>
+          </div>
+          <ol class="numbered-list">
+            <li><span data-en="R — Remove people from the immediate danger zone." data-ar="أزل الأشخاص من منطقة الخطر المباشرة.">R — Remove people from the immediate danger zone.</span></li>
+            <li><span data-en="A — Activate the nearest fire alarm. Alert the fire warden." data-ar="شغّل أقرب إنذار حريق. أبلغ مشرف السلامة.">A — Activate the nearest fire alarm. Alert the fire warden.</span></li>
+            <li><span data-en="C — Use the correct extinguisher (CO₂ or dry powder for electrical fires)." data-ar="استخدم طفاية الحريق الصحيحة (CO₂ أو مسحوق جاف للحرائق الكهربائية).">C — Use the correct extinguisher (CO₂ or dry powder for electrical fires).</span></li>
+            <li><span data-en="E — Evacuate to the assembly point. Do NOT use elevators." data-ar="إخلاء إلى نقطة التجمع. لا تستخدم المصاعد.">E — Evacuate to the assembly point. Do NOT use elevators.</span></li>
+          </ol>
+          <div class="key-point" style="margin-top:12px;font-size:0.85rem">
+            <span data-en="Know your nearest: fire alarm point, fire extinguisher, emergency exit, assembly area."
+            data-ar="اعرف أقرب: نقطة إنذار حريق، طفاية حريق، مخرج طوارئ، منطقة تجمع.">
+            Know your nearest: fire alarm point, fire extinguisher, emergency exit, assembly area.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:24px">
+        <h3><span data-en="Other Emergency Scenarios" data-ar="سيناريوهات طوارئ أخرى">Other Emergency Scenarios</span></h3>
+        <div class="grid-2">
+          <div>
+            <h4 style="color:var(--primary)"><span data-en="Medical Emergency" data-ar="حالة طبية طارئة">Medical Emergency</span></h4>
+            <ul class="check-list">
+              <li><span data-en="Call the first aider / medical room immediately." data-ar="اتصل بالمسعف الأول / الغرفة الطبية فورًا.">Call the first aider / medical room immediately.</span></li>
+              <li><span data-en="Do NOT move an injured person unless they are in immediate danger." data-ar="لا تحرك شخصًا مصابًا إلا إذا كان في خطر مباشر.">Do NOT move an injured person unless they are in immediate danger.</span></li>
+              <li><span data-en="Keep the area clear and provide first aid if trained." data-ar="حافظ على المنطقة خالية وقدم الإسعافات الأولية إذا كنت مدربًا.">Keep the area clear and provide first aid if trained.</span></li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="color:var(--primary)"><span data-en="Gas Leak / Fume Release" data-ar="تسرب غاز / إطلاق أبخرة">Gas Leak / Fume Release</span></h4>
+            <ul class="check-list">
+              <li><span data-en="Evacuate immediately. Do NOT attempt to locate the source." data-ar="أخلِ فورًا. لا تحاول تحديد موقع المصدر.">Evacuate immediately. Do NOT attempt to locate the source.</span></li>
+              <li><span data-en="Alert the emergency response team from a safe location." data-ar="أبلغ فريق الاستجابة للطوارئ من مكان آمن.">Alert the emergency response team from a safe location.</span></li>
+              <li><span data-en="If possible, shut down ventilation to prevent spread." data-ar="إذا أمكن، أوقف التهوية لمنع الانتشار.">If possible, shut down ventilation to prevent spread.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- MODULE 10: EMS DOCUMENTATION                                   -->
+  <!-- ============================================================ -->
+  <section id="module10" class="section bg-light">
+    <div class="container">
+      <div class="module-label"><span data-en="Module 10" data-ar="الوحدة 10">Module 10</span></div>
+      <h2 class="section-title">
+        <span data-en="EMS Documentation &amp; Records" data-ar="توثيق وسجلات نظام الإدارة البيئية">EMS Documentation &amp; Records</span>
+      </h2>
+
+      <div class="card">
+        <h3><span data-en="Document Hierarchy" data-ar="التسلسل الهرمي للوثائق">Document Hierarchy</span></h3>
+        <p><span data-en="Our EMS documentation is structured in four levels:"
+        data-ar="توثيق نظام الإدارة البيئية لدينا منظم في أربعة مستويات:">
+        Our EMS documentation is structured in four levels:
+        </span></p>
+        <div class="doc-pyramid">
+          <div class="pyramid-level" style="width:30%"><strong><span data-en="Level 1: EMS Manual" data-ar="المستوى 1: دليل نظام الإدارة البيئية">Level 1: EMS Manual</span></strong><br><small><span data-en="Overall system description &amp; policy" data-ar="وصف النظام العام والسياسة">Overall system description &amp; policy</span></small></div>
+          <div class="pyramid-level" style="width:50%"><strong><span data-en="Level 2: Procedures" data-ar="المستوى 2: الإجراءات">Level 2: Procedures</span></strong><br><small><span data-en="Who does what, when, and how" data-ar="من يفعل ماذا ومتى وكيف">Who does what, when, and how</span></small></div>
+          <div class="pyramid-level" style="width:70%"><strong><span data-en="Level 3: Work Instructions" data-ar="المستوى 3: تعليمات العمل">Level 3: Work Instructions</span></strong><br><small><span data-en="Step-by-step task instructions" data-ar="تعليمات المهمة خطوة بخطوة">Step-by-step task instructions</span></small></div>
+          <div class="pyramid-level" style="width:90%"><strong><span data-en="Level 4: Records &amp; Forms" data-ar="المستوى 4: السجلات والنماذج">Level 4: Records &amp; Forms</span></strong><br><small><span data-en="Evidence of activity — logs, checklists, reports" data-ar="دليل النشاط — سجلات، قوائم تفقد، تقارير">Evidence of activity — logs, checklists, reports</span></small></div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:20px">
+        <h3><span data-en="Document Control Rules" data-ar="قواعد التحكم في الوثائق">Document Control Rules</span></h3>
+        <ul class="check-list">
+          <li><span data-en="Always use the latest version of a document — check the revision date." data-ar="استخدم دائمًا أحدث إصدار من الوثيقة — تحقق من تاريخ المراجعة.">Always use the latest version of a document — check the revision date.</span></li>
+          <li><span data-en="Do NOT make unofficial copies of controlled documents." data-ar="لا تقم بعمل نسخ غير رسمية من الوثائق الخاضعة للرقابة.">Do NOT make unofficial copies of controlled documents.</span></li>
+          <li><span data-en="All records must be legible, dated, and signed." data-ar="جميع السجلات يجب أن تكون مقروءة ومؤرخة وموقعة.">All records must be legible, dated, and signed.</span></li>
+          <li><span data-en="Report missing or outdated documents to the EMS representative." data-ar="أبلغ عن الوثائق المفقودة أو القديمة لممثل نظام الإدارة البيئية.">Report missing or outdated documents to the EMS representative.</span></li>
+          <li><span data-en="Records are retained according to the document retention schedule." data-ar="يتم الاحتفاظ بالسجلات وفقًا لجدول الاحتفاظ بالوثائق.">Records are retained according to the document retention schedule.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- MODULE 11: MONITORING, AUDIT & MANAGEMENT REVIEW                -->
+  <!-- ============================================================ -->
+  <section id="module11" class="section">
+    <div class="container">
+      <div class="module-label"><span data-en="Module 11" data-ar="الوحدة 11">Module 11</span></div>
+      <h2 class="section-title">
+        <span data-en="Monitoring, Audit &amp; Management Review" data-ar="المراقبة والمراجعة ومراجعة الإدارة">Monitoring, Audit &amp; Management Review</span>
+      </h2>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3><span data-en="Monitoring &amp; Measurement" data-ar="المراقبة والقياس">Monitoring &amp; Measurement</span></h3>
+          <ul class="check-list">
+            <li><span data-en="We monitor: energy use, water use, scrap generation, emissions." data-ar="نراقب: استخدام الطاقة، استخدام المياه، توليد المخلفات، الانبعاثات.">We monitor: energy use, water use, scrap generation, emissions.</span></li>
+            <li><span data-en="Weekly waste weighing and monthly energy reviews." data-ar="وزن المخلفات أسبوعيًا ومراجعات الطاقة الشهرية.">Weekly waste weighing and monthly energy reviews.</span></li>
+            <li><span data-en="Calibrated equipment ensures accurate data." data-ar="المعدات المعايرة تضمن بيانات دقيقة.">Calibrated equipment ensures accurate data.</span></li>
+            <li><span data-en="Results are posted on the EMS notice board." data-ar="يتم نشر النتائج على لوحة إعلانات نظام الإدارة البيئية.">Results are posted on the EMS notice board.</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span data-en="Internal Audits" data-ar="المراجعات الداخلية">Internal Audits</span></h3>
+          <ul class="check-list">
+            <li><span data-en="Planned audits check if we are following our own procedures." data-ar="المراجعات المخططة تتحقق مما إذا كنا نتبع إجراءاتنا الخاصة.">Planned audits check if we are following our own procedures.</span></li>
+            <li><span data-en="Auditors will interview employees and review records." data-ar="سيتحدث المراجعون مع الموظفين ويراجعون السجلات.">Auditors will interview employees and review records.</span></li>
+            <li><span data-en="Be honest — if you do not know something, say so." data-ar="كن صادقًا — إذا كنت لا تعرف شيئًا، فقل ذلك.">Be honest — if you do not know something, say so.</span></li>
+            <li><span data-en="Findings are opportunities to improve, not punishments." data-ar="نتائج المراجعة هي فرص للتحسين، وليست عقوبات.">Findings are opportunities to improve, not punishments.</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span data-en="Management Review" data-ar="مراجعة الإدارة">Management Review</span></h3>
+          <ul class="check-list">
+            <li><span data-en="Top management reviews the EMS at least annually." data-ar="تراجع الإدارة العليا نظام الإدارة البيئية سنويًا على الأقل.">Top management reviews the EMS at least annually.</span></li>
+            <li><span data-en="Reviews cover: audit results, performance, non-conformities, improvement suggestions." data-ar="تغطي المراجعات: نتائج المراجعة، الأداء، حالات عدم المطابقة، اقتراحات التحسين.">Reviews cover: audit results, performance, non-conformities, improvement suggestions.</span></li>
+            <li><span data-en="Decisions and action items are documented and followed up." data-ar="يتم توثيق القرارات وبنود العمل ومتابعتها.">Decisions and action items are documented and followed up.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- MODULE 12: NONCONFORMITY & CORRECTIVE ACTION                   -->
+  <!-- ============================================================ -->
+  <section id="module12" class="section bg-light">
+    <div class="container">
+      <div class="module-label"><span data-en="Module 12" data-ar="الوحدة 12">Module 12</span></div>
+      <h2 class="section-title">
+        <span data-en="Nonconformity &amp; Corrective Action" data-ar="عدم المطابقة والإجراء التصحيحي">Nonconformity &amp; Corrective Action</span>
+      </h2>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3><span data-en="What is a Nonconformity?" data-ar="ما هو عدم المطابقة؟">What is a Nonconformity?</span></h3>
+          <p><span data-en="A nonconformity is a failure to meet a requirement. This could be:"
+          data-ar="عدم المطابقة هو الفشل في تلبية متطلب. يمكن أن يكون:">
+          A nonconformity is a failure to meet a requirement. This could be:
+          </span></p>
+          <ul class="check-list">
+            <li><span data-en="A procedure not being followed (e.g., skipping chemical inspection)." data-ar="عدم اتباع إجراء (مثل تخطي تفقد المواد الكيميائية).">A procedure not being followed (e.g., skipping chemical inspection).</span></li>
+            <li><span data-en="A piece of equipment not functioning correctly (e.g., leaky valve)." data-ar="عدم عمل قطعة من المعدات بشكل صحيح (مثل صمام مسرب).">A piece of equipment not functioning correctly (e.g., leaky valve).</span></li>
+            <li><span data-en="A record not being completed (e.g., missing waste log entry)." data-ar="عدم اكتمال سجل (مثل فقدان إدخال سجل المخلفات).">A record not being completed (e.g., missing waste log entry).</span></li>
+            <li><span data-en="A legal requirement that has not been met." data-ar="متطلب قانوني لم يتم الوفاء به.">A legal requirement that has not been met.</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span data-en="Corrective Action Process" data-ar="عملية الإجراء التصحيحي">Corrective Action Process</span></h3>
+          <ol class="numbered-list">
+            <li><span data-en="Identify and document the nonconformity." data-ar="تحديد وتوثيق عدم المطابقة.">Identify and document the nonconformity.</span></li>
+            <li><span data-en="Contain the problem (immediate fix to stop the issue)." data-ar="احتواء المشكلة (إصلاح فوري لوقف المشكلة).">Contain the problem (immediate fix to stop the issue).</span></li>
+            <li><span data-en="Determine the root cause (why did it really happen?)." data-ar="تحديد السبب الجذري (لماذا حدث بالفعل؟).">Determine the root cause (why did it really happen?).</span></li>
+            <li><span data-en="Implement corrective action to prevent recurrence." data-ar="تنفيذ الإجراء التصحيحي لمنع التكرار.">Implement corrective action to prevent recurrence.</span></li>
+            <li><span data-en="Verify the action was effective." data-ar="التحقق من فعالية الإجراء.">Verify the action was effective.</span></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="key-point" style="margin-top:20px">
+        <span data-en="Do not hide nonconformities — identifying them is the first step to improvement. A hidden problem never gets fixed."
+        data-ar="لا تخف حالات عدم المطابقة — تحديدها هو الخطوة الأولى للتحسين. المشكلة المخفية لا تُحل أبدًا.">
+        Do not hide nonconformities — identifying them is the first step to improvement. A hidden problem never gets fixed.
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- MODULE 13: YOUR RESPONSIBILITIES                               -->
+  <!-- ============================================================ -->
+  <section id="module13" class="section">
+    <div class="container">
+      <div class="module-label"><span data-en="Module 13" data-ar="الوحدة 13">Module 13</span></div>
+      <h2 class="section-title">
+        <span data-en="Your Roles &amp; Responsibilities" data-ar="أدوارك ومسؤولياتك">Your Roles &amp; Responsibilities</span>
+      </h2>
+
+      <div class="grid-3">
+        <div class="card card-icon">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/>
+              <path d="M14 2v6h6"/>
+              <path d="M9 13h6"/><path d="M9 17h6"/><path d="M9 9h1"/>
+            </svg>
+          </div>
+          <h3><span data-en="Follow Procedures" data-ar="اتبع الإجراءات">Follow Procedures</span></h3>
+          <p><span data-en="Adhere to all EMS work instructions and standard operating procedures. If you are unsure, ask before acting." data-ar="الالتزام بجميع تعليمات العمل لنظام الإدارة البيئية وإجراءات التشغيل القياسية. إذا لم تكن متأكدًا، اسأل قبل التصرف.">Adhere to all EMS work instructions and standard operating procedures. If you are unsure, ask before acting.</span></p>
+        </div>
+        <div class="card card-icon">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+            </svg>
+          </div>
+          <h3><span data-en="Report Incidents" data-ar="أبلغ عن الحوادث">Report Incidents</span></h3>
+          <p><span data-en="Report any environmental incident, near-miss, or non-conformity to your supervisor. Early reporting prevents escalation." data-ar="الإبلاغ عن أي حادث بيئي أو حادث وشيك أو عدم مطابقة لمشرفك. الإبلاغ المبكر يمنع التفاقم.">Report any environmental incident, near-miss, or non-conformity to your supervisor. Early reporting prevents escalation.</span></p>
+        </div>
+        <div class="card card-icon">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2C8 2 4 6 4 10c0 5 3 8 8 8s8-3 8-8c0-4-4-8-8-8z"/>
+              <path d="M12 2v16"/>
+              <path d="M8 12c0 2 1.5 4 4 4"/>
+            </svg>
+          </div>
+          <h3><span data-en="Conserve Resources" data-ar="حافظ على الموارد">Conserve Resources</span></h3>
+          <p><span data-en="Turn off equipment when not in use, reduce water waste, segregate scrap correctly, and suggest improvements." data-ar="أطفئ المعدات عند عدم استخدامها، وقلل من هدر المياه، وافصل المخلفات بشكل صحيح، واقترح التحسينات.">Turn off equipment when not in use, reduce water waste, segregate scrap correctly, and suggest improvements.</span></p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:20px">
+        <h3><span data-en="Your Rights" data-ar="حقوقك">Your Rights</span></h3>
+        <ul class="check-list">
+          <li><span data-en="You have the right to stop work if an activity poses an environmental or safety risk." data-ar="لديك الحق في إيقاف العمل إذا كان النشاط يشكل خطرًا بيئيًا أو على السلامة.">You have the right to stop work if an activity poses an environmental or safety risk.</span></li>
+          <li><span data-en="You have the right to access environmental training and information." data-ar="لديك الحق في الوصول إلى التدريب والمعلومات البيئية.">You have the right to access environmental training and information.</span></li>
+          <li><span data-en="You have the right to suggest improvements without fear of blame." data-ar="لديك الحق في اقتراح التحسينات دون خوف من اللوم.">You have the right to suggest improvements without fear of blame.</span></li>
+          <li><span data-en="You have the right to refuse to perform a task that violates environmental laws." data-ar="لديك الحق في رفض أداء مهمة تنتهك القوانين البيئية.">You have the right to refuse to perform a task that violates environmental laws.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- MODULE 14: CONTINUAL IMPROVEMENT                               -->
+  <!-- ============================================================ -->
+  <section id="module14" class="section bg-light">
+    <div class="container">
+      <div class="module-label"><span data-en="Module 14" data-ar="الوحدة 14">Module 14</span></div>
+      <h2 class="section-title">
+        <span data-en="Continual Improvement &amp; Your Voice" data-ar="التحسين المستمر وصوتك">Continual Improvement &amp; Your Voice</span>
+      </h2>
+
+      <div class="card">
+        <h3><span data-en="Kaizen — Small Changes, Big Impact" data-ar="كايزن — تغييرات صغيرة، تأثير كبير">Kaizen — Small Changes, Big Impact</span></h3>
+        <p>
+          <span data-en="Continual improvement is not just about big projects. Small, everyday improvements by every employee add up to significant environmental and cost benefits. This is the Kaizen approach — always asking: 'How can we do this better?'"
+          data-ar="التحسين المستمر لا يتعلق فقط بالمشاريع الكبيرة. التحسينات الصغيرة اليومية من كل موظف تتراكم لتحقيق فوائد بيئية واقتصادية كبيرة. هذا هو نهج كايزن — اسأل دائمًا: 'كيف يمكننا القيام بذلك بشكل أفضل؟'">
+          Continual improvement is not just about big projects. Small, everyday improvements by every employee add up to significant environmental and cost benefits. This is the Kaizen approach — always asking: 'How can we do this better?'
+          </span>
+        </p>
+      </div>
+
+      <div class="grid-2" style="margin-top:20px">
+        <div class="card">
+          <h3><span data-en="How You Can Contribute" data-ar="كيف يمكنك المساهمة">How You Can Contribute</span></h3>
+          <ul class="check-list">
+            <li><span data-en="Suggest improvements to your supervisor or via the suggestion box." data-ar="اقترح التحسينات على مشرفك أو من خلال صندوق الاقتراحات.">Suggest improvements to your supervisor or via the suggestion box.</span></li>
+            <li><span data-en="Participate in EMS team meetings and toolbox talks." data-ar="شارك في اجتماعات فريق نظام الإدارة البيئية ومحادثات الأدوات.">Participate in EMS team meetings and toolbox talks.</span></li>
+            <li><span data-en="Report inefficiencies — water leaks, compressed air leaks, unnecessary lighting." data-ar="أبلغ عن أوجه القصور — تسريبات المياه، تسريبات الهواء المضغوط، الإضاءة غير الضرورية.">Report inefficiencies — water leaks, compressed air leaks, unnecessary lighting.</span></li>
+            <li><span data-en="Share best practices with colleagues." data-ar="شارك أفضل الممارسات مع الزملاء.">Share best practices with colleagues.</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span data-en="Examples of Employee-Led Improvements" data-ar="أمثلة على تحسينات قادها الموظفون">Examples of Employee-Led Improvements</span></h3>
+          <ul class="check-list">
+            <li><span data-en="An operator suggested changing the die cleaning schedule — reduced lubricant use by 20%." data-ar="اقترح مشغل تغيير جدول تنظيف القالب — قلل استخدام مواد التشحيم بنسبة 20%.">An operator suggested changing the die cleaning schedule — reduced lubricant use by 20%.</span></li>
+            <li><span data-en="A warehouse worker reorganized chemical storage — reduced spill risk and improved access." data-ar="أعاد عامل مخزن تنظيم تخزين المواد الكيميائية — قلل خطر الانسكاب وحسّن الوصول.">A warehouse worker reorganized chemical storage — reduced spill risk and improved access.</span></li>
+            <li><span data-en="A maintenance technician installed auto-shutoff valves on cooling lines — saved 5,000 liters of water per month." data-ar="ركّب فني صيانة صمامات إغلاق تلقائي على خطوط التبريد — وفر 5,000 لتر من المياه شهريًا.">A maintenance technician installed auto-shutoff valves on cooling lines — saved 5,000 liters of water per month.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="key-point" style="margin-top:20px">
+        <span data-en="Your ideas matter. The best improvements often come from the people doing the job every day. Speak up!"
+        data-ar="أفكارك مهمة. أفضل التحسينات غالبًا ما تأتي من الأشخاص الذين يقومون بالمهمة كل يوم. تكلم!">
+        Your ideas matter. The best improvements often come from the people doing the job every day. Speak up!
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- REAL-LIFE SCENARIOS                                           -->
+  <!-- ============================================================ -->
+  <section id="scenarios" class="section">
+    <div class="container">
+      <div class="module-label"><span data-en="Scenarios" data-ar="سيناريوهات">Scenarios</span></div>
+      <h2 class="section-title">
+        <span data-en="Real-Life Scenarios — What Would You Do?" data-ar="سيناريوهات واقعية — ماذا ستفعل؟">Real-Life Scenarios — What Would You Do?</span>
+      </h2>
+      <p class="section-sub">
+        <span data-en="Read each scenario carefully. Think about your answer, then click to see the recommended response."
+        data-ar="اقرأ كل سيناريو بعناية. فكر في إجابتك، ثم انقر لرؤية الاستجابة الموصى بها.">
+        Read each scenario carefully. Think about your answer, then click to see the recommended response.
+        </span>
+      </p>
+
+      <div class="scenario" id="s1">
+        <div class="scenario-header" onclick="toggleScenario('s1')">
+          <span class="scenario-num">1</span>
+          <span data-en="A drum of hydraulic oil in the warehouse has no secondary containment. The floor shows signs of staining."
+          data-ar="برميل زيت هيدروليكي في المخزن ليس له احتواء ثانوي. الأرضية تظهر عليها علامات تلطخ.">
+          A drum of hydraulic oil in the warehouse has no secondary containment. The floor shows signs of staining.
+          </span>
+          <span class="scenario-toggle">+</span>
+        </div>
+        <div class="scenario-body">
+          <p class="scenario-answer">
+            <strong><span data-en="Recommended Response:" data-ar="الاستجابة الموصى بها:">Recommended Response:</span></strong><br>
+            <span data-en="1. Report immediately to the warehouse supervisor. 2. Place a spill tray or bunded pallet under the drum to contain any leaks. 3. The stained floor area should be cleaned and the waste disposed of as hazardous waste. 4. The incident should be logged in the EMS records as a near-miss. 5. All chemical drums in the warehouse should be checked to ensure they have proper containment."
+            data-ar="1. أبلغ فورًا إلى مشرف المخزن. 2. ضع صينية تنقيط أو منصة نقالة بحاجز تحت البرميل لاحتواء أي تسريبات. 3. يجب تنظيف منطقة الأرضية الملطخة والتخلص من المخلفات كمخلفات خطرة. 4. يجب تسجيل الحادث في سجلات نظام الإدارة البيئية كحادث وشيك. 5. يجب فحص جميع براميل المواد الكيميائية في المخزن للتأكد من وجود احتواء مناسب لها.">
+            1. Report immediately to the warehouse supervisor. 2. Place a spill tray or bunded pallet under the drum to contain any leaks. 3. The stained floor area should be cleaned and the waste disposed of as hazardous waste. 4. The incident should be logged in the EMS records as a near-miss. 5. All chemical drums in the warehouse should be checked to ensure they have proper containment.
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="scenario" id="s2">
+        <div class="scenario-header" onclick="toggleScenario('s2')">
+          <span class="scenario-num">2</span>
+          <span data-en="You notice a colleague putting used chemical rags into the general waste bin instead of the hazardous waste container."
+          data-ar="تلاحظ أن زميلاً يضع خرقًا كيميائية مستعملة في حاوية المخلفات العامة بدلاً من حاوية المخلفات الخطرة.">
+          You notice a colleague putting used chemical rags into the general waste bin instead of the hazardous waste container.
+          </span>
+          <span class="scenario-toggle">+</span>
+        </div>
+        <div class="scenario-body">
+          <p class="scenario-answer">
+            <strong><span data-en="Recommended Response:" data-ar="الاستجابة الموصى بها:">Recommended Response:</span></strong><br>
+            <span data-en="1. Politely remind your colleague that chemical-contaminated rags are hazardous waste and must go in the red bin. 2. Explain why — these rags can contaminate the entire waste stream and cause environmental harm. 3. Remove the rags from the general bin and place them in the correct hazardous waste container (wear gloves). 4. Report the incident to your supervisor so a toolbox talk can be arranged on waste segregation."
+            data-ar="1. ذكر زميلك بلطف أن الخرق الملوثة كيميائيًا هي مخلفات خطرة ويجب وضعها في الحاوية الحمراء. 2. اشرح السبب — هذه الخرق يمكن أن تلوث تيار المخلفات بالكامل وتسبب ضررًا بيئيًا. 3. أزل الخرق من الحاوية العامة وضعها في حاوية المخلفات الخطرة الصحيحة (ارتدِ قفازات). 4. أبلغ الحادث إلى مشرفك حتى يمكن ترتيب محادثة أدوات حول فرز المخلفات.">
+            1. Politely remind your colleague that chemical-contaminated rags are hazardous waste and must go in the red bin. 2. Explain why — these rags can contaminate the entire waste stream and cause environmental harm. 3. Remove the rags from the general bin and place them in the correct hazardous waste container (wear gloves). 4. Report the incident to your supervisor so a toolbox talk can be arranged on waste segregation.
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="scenario" id="s3">
+        <div class="scenario-header" onclick="toggleScenario('s3')">
+          <span class="scenario-num">3</span>
+          <span data-en="You are working on the extrusion line and notice the fume extraction system is not working properly. The production manager tells you to keep running because there is a deadline."
+          data-ar="أنت تعمل على خط البثق وتلاحظ أن نظام شفط الأبخرة لا يعمل بشكل صحيح. يخبرك مدير الإنتاج بمواصلة التشغيل بسبب موعد تسليم.">
+          You are working on the extrusion line and notice the fume extraction system is not working properly. The production manager tells you to keep running because there is a deadline.
+          </span>
+          <span class="scenario-toggle">+</span>
+        </div>
+        <div class="scenario-body">
+          <p class="scenario-answer">
+            <strong><span data-en="Recommended Response:" data-ar="الاستجابة الموصى بها:">Recommended Response:</span></strong><br>
+            <span data-en="1. You have the right and responsibility to stop work if there is a risk. 2. Explain that operating without fume extraction violates our environmental policy and may exceed legal emission limits. 3. Offer alternatives — can production be shifted to another line, or can the extraction be repaired quickly? 4. If pressure continues, escalate to the EHS manager or top management. 5. Document the situation — the production manager's instruction and your concerns."
+            data-ar="1. لديك الحق والمسؤولية في إيقاف العمل إذا كان هناك خطر. 2. اشرح أن التشغيل بدون شفط أبخرة ينتهك سياساتنا البيئية وقد يتجاوز حدود الانبعاثات القانونية. 3. قدم بدائل — هل يمكن نقل الإنتاج إلى خط آخر، أو إصلاح الشفط بسرعة؟ 4. إذا استمر الضغط، اصعد إلى مدير البيئة والسلامة أو الإدارة العليا. 5. وثق الموقف — تعليمات مدير الإنتاج ومخاوفك.">
+            1. You have the right and responsibility to stop work if there is a risk. 2. Explain that operating without fume extraction violates our environmental policy and may exceed legal emission limits. 3. Offer alternatives — can production be shifted to another line, or can the extraction be repaired quickly? 4. If pressure continues, escalate to the EHS manager or top management. 5. Document the situation — the production manager's instruction and your concerns.
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="scenario" id="s4">
+        <div class="scenario-header" onclick="toggleScenario('s4')">
+          <span class="scenario-num">4</span>
+          <span data-en="You discover a small leak in a coolant pipe near the wire drawing area. Coolant is dripping onto the floor and flowing toward a floor drain."
+          data-ar="تكتشف تسربًا صغيرًا في أنبوب التبريد بالقرب من منطقة سحب الأسلاك. سائل التبريد يقطر على الأرض ويتدفق نحو مصرف أرضي.">
+          You discover a small leak in a coolant pipe near the wire drawing area. Coolant is dripping onto the floor and flowing toward a floor drain.
+          </span>
+          <span class="scenario-toggle">+</span>
+        </div>
+        <div class="scenario-body">
+          <p class="scenario-answer">
+            <strong><span data-en="Recommended Response:" data-ar="الاستجابة الموصى بها:">Recommended Response:</span></strong><br>
+            <span data-en="1. Immediately contain the leak — place a drip tray or absorbent material under the leak. 2. Block the floor drain using a drain cover or absorbent socks to prevent coolant from entering the drainage system. 3. Report to the supervisor and maintenance team for pipe repair. 4. Clean up the spilled coolant and dispose of absorbent materials as hazardous waste. 5. Document the incident and the root cause — is this a recurring issue?"
+            data-ar="1. احتواء التسرب فورًا — ضع صينية تنقيط أو مادة ماصة تحت التسرب. 2. اسد مصرف الأرضية باستخدام غطاء مصرف أو جوارب ماصة لمنع دخول سائل التبريد إلى نظام الصرف. 3. أبلغ المشرف وفريق الصيانة لإصلاح الأنبوب. 4. نظف سائل التبريد المنسكب وتخلص من المواد الماصة كمخلفات خطرة. 5. وثق الحادث والسبب الجذري — هل هذه مشكلة متكررة؟">
+            1. Immediately contain the leak — place a drip tray or absorbent material under the leak. 2. Block the floor drain using a drain cover or absorbent socks to prevent coolant from entering the drainage system. 3. Report to the supervisor and maintenance team for pipe repair. 4. Clean up the spilled coolant and dispose of absorbent materials as hazardous waste. 5. Document the incident and the root cause — is this a recurring issue?
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="scenario" id="s5">
+        <div class="scenario-header" onclick="toggleScenario('s5')">
+          <span class="scenario-num">5</span>
+          <span data-en="An internal auditor asks you: 'How do you know what to do with waste from your machine?' and 'Where is the SDS for the chemical you are using?'"
+          data-ar="يسألك مراجع داخلي: 'كيف تعرف ماذا تفعل بالمخلفات من آلتك؟' و'أين صحيفة بيانات السلامة للمادة الكيميائية التي تستخدمها؟'">
+          An internal auditor asks you: 'How do you know what to do with waste from your machine?' and 'Where is the SDS for the chemical you are using?'
+          </span>
+          <span class="scenario-toggle">+</span>
+        </div>
+        <div class="scenario-body">
+          <p class="scenario-answer">
+            <strong><span data-en="Recommended Response:" data-ar="الاستجابة الموصى بها:">Recommended Response:</span></strong><br>
+            <span data-en="1. Answer confidently: 'I follow the waste segregation procedure posted near my workstation. Copper scrap goes in the blue bin, PVC in the green bin, and hazardous waste in the red bin.' 2. 'The SDS is kept in the binder at the supervisor's office and also available digitally on the EMS portal.' 3. If you do not know an answer, say: 'I am not sure, but I can find out and get back to you.' 4. Remember — auditors are there to help us improve, not to catch us out. Be honest and cooperative."
+            data-ar="1. أجب بثقة: 'أتبع إجراء فرز المخلفات المعلق بالقرب من محطة عملي. مخلفات النحاس في الحاوية الزرقاء، PVC في الحاوية الخضراء، والمخلفات الخطرة في الحاوية الحمراء.' 2. 'صحيفة بيانات السلامة محفوظة في المجلد في مكتب المشرف ومتاحة رقميًا على بوابة نظام الإدارة البيئية.' 3. إذا كنت لا تعرف الإجابة، قل: 'لست متأكدًا، لكن يمكنني معرفة ذلك والعودة إليك.' 4. تذكر — المراجعون موجودون لمساعدتنا على التحسين، وليس للإيقاع بنا. كن صادقًا ومتعاونًا.">
+            1. Answer confidently: 'I follow the waste segregation procedure posted near my workstation. Copper scrap goes in the blue bin, PVC in the green bin, and hazardous waste in the red bin.' 2. 'The SDS is kept in the binder at the supervisor's office and also available digitally on the EMS portal.' 3. If you do not know an answer, say: 'I am not sure, but I can find out and get back to you.' 4. Remember — auditors are there to help us improve, not to catch us out. Be honest and cooperative.
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="scenario" id="s6">
+        <div class="scenario-header" onclick="toggleScenario('s6')">
+          <span class="scenario-num">6</span>
+          <span data-en="You find an unlabeled container of liquid in the chemical storage area. No one knows what it is."
+          data-ar="تجد حاوية سائل غير موسومة في منطقة تخزين المواد الكيميائية. لا أحد يعرف ما هي.">
+          You find an unlabeled container of liquid in the chemical storage area. No one knows what it is.
+          </span>
+          <span class="scenario-toggle">+</span>
+        </div>
+        <div class="scenario-body">
+          <p class="scenario-answer">
+            <strong><span data-en="Recommended Response:" data-ar="الاستجابة الموصى بها:">Recommended Response:</span></strong><br>
+            <span data-en="1. Do NOT open, smell, or taste the container to identify it — this is extremely dangerous. 2. Isolate the container in a ventilated, contained area away from other chemicals. 3. Label it as 'UNKNOWN — DO NOT USE' with the date found. 4. Report to the supervisor and EHS team. 5. Review delivery records and purchase orders to trace the source. 6. If it cannot be identified, arrange for disposal by a licensed hazardous waste contractor."
+            data-ar="1. لا تفتح الحاوية أو تشمها أو تتذوقها للتعرف عليها — هذا خطير جدًا. 2. اعزل الحاوية في منطقة جيدة التهوية ومحتواة بعيدًا عن المواد الكيميائية الأخرى. 3. وسّمها بـ 'غير معروفة — لا تستخدم' مع تاريخ العثور. 4. أبلغ المشرف وفريق البيئة والسلامة. 5. راجع سجلات التسليم وأوامر الشراء لتتبع المصدر. 6. إذا تعذر التعرف عليها، رتب للتخلص منها بواسطة مقاول مخلفات خطرة مرخص.">
+            1. Do NOT open, smell, or taste the container to identify it — this is extremely dangerous. 2. Isolate the container in a ventilated, contained area away from other chemicals. 3. Label it as 'UNKNOWN — DO NOT USE' with the date found. 4. Report to the supervisor and EHS team. 5. Review delivery records and purchase orders to trace the source. 6. If it cannot be identified, arrange for disposal by a licensed hazardous waste contractor.
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="scenario" id="s7">
+        <div class="scenario-header" onclick="toggleScenario('s7')">
+          <span class="scenario-num">7</span>
+          <span data-en="The fire alarm sounds during your shift. You are in the warehouse area."
+          data-ar="ينطلق إنذار الحريق أثناء نوبتك. أنت في منطقة المخزن.">
+          The fire alarm sounds during your shift. You are in the warehouse area.
+          </span>
+          <span class="scenario-toggle">+</span>
+        </div>
+        <div class="scenario-body">
+          <p class="scenario-answer">
+            <strong><span data-en="Recommended Response:" data-ar="الاستجابة الموصى بها:">Recommended Response:</span></strong><br>
+            <span data-en="1. Stop what you are doing immediately. 2. Close any chemical containers or valves if safe to do so (seconds only). 3. Proceed calmly to the nearest emergency exit — do NOT run. 4. Walk to the designated assembly point. 5. Do NOT use elevators. 6. Wait for the all-clear signal from the emergency response team. 7. Do NOT re-enter the building until authorized. 8. Report to your supervisor for headcount confirmation."
+            data-ar="1. توقف عما تفعله فورًا. 2. أغلق أي حاويات كيميائية أو صمامات إذا كان آمنًا (ثوانٍ فقط). 3. توجه بهدوء إلى أقرب مخرج طوارئ — لا تركض. 4. امشِ إلى نقطة التجمع المحددة. 5. لا تستخدم المصاعد. 6. انتظر إشارة السماح من فريق الاستجابة للطوارئ. 7. لا تدخل المبنى مرة أخرى حتى يتم التصريح. 8. أبلغ مشرفك لتأكيد إحصاء الأفراد.">
+            1. Stop what you are doing immediately. 2. Close any chemical containers or valves if safe to do so (seconds only). 3. Proceed calmly to the nearest emergency exit — do NOT run. 4. Walk to the designated assembly point. 5. Do NOT use elevators. 6. Wait for the all-clear signal from the emergency response team. 7. Do NOT re-enter the building until authorized. 8. Report to your supervisor for headcount confirmation.
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="scenario" id="s8">
+        <div class="scenario-header" onclick="toggleScenario('s8')">
+          <span class="scenario-num">8</span>
+          <span data-en="You have an idea to reduce packaging waste — your cables could be wound on reusable reels instead of single-use wooden spools."
+          data-ar="لديك فكرة لتقليل مخلفات التغليف — يمكن لف الكابلات على بكرات قابلة لإعادة الاستخدام بدلاً من البكرات الخشبية أحادية الاستخدام.">
+          You have an idea to reduce packaging waste — your cables could be wound on reusable reels instead of single-use wooden spools.
+          </span>
+          <span class="scenario-toggle">+</span>
+        </div>
+        <div class="scenario-body">
+          <p class="scenario-answer">
+            <strong><span data-en="Recommended Response:" data-ar="الاستجابة الموصى بها:">Recommended Response:</span></strong><br>
+            <span data-en="1. Write down your idea clearly — including the environmental benefit, estimated cost savings, and implementation steps. 2. Submit it to your supervisor or through the EMS suggestion system. 3. If possible, find examples from other cable factories that use reusable reels. 4. Offer to be part of a trial or pilot project. 5. Even if the idea is not implemented immediately, it demonstrates initiative and will be recorded as a continual improvement suggestion."
+            data-ar="1. اكتب فكرتك بوضوح — بما في ذلك الفائدة البيئية، وتوفير التكاليف المقدر، وخطوات التنفيذ. 2. قدمها لمشرفك أو من خلال نظام اقتراحات نظام الإدارة البيئية. 3. إذا أمكن، ابحث عن أمثلة من مصانع كابلات أخرى تستخدم بكرات قابلة لإعادة الاستخدام. 4. اعرض أن تكون جزءًا من تجربة أو مشروع تجريبي. 5. حتى إذا لم يتم تنفيذ الفكرة فورًا، فهي تظهر المبادرة وستُسجل كاقتراح تحسين مستمر.">
+            1. Write down your idea clearly — including the environmental benefit, estimated cost savings, and implementation steps. 2. Submit it to your supervisor or through the EMS suggestion system. 3. If possible, find examples from other cable factories that use reusable reels. 4. Offer to be part of a trial or pilot project. 5. Even if the idea is not implemented immediately, it demonstrates initiative and will be recorded as a continual improvement suggestion.
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- QUIZ                                                           -->
+  <!-- ============================================================ -->
+  <section id="quiz" class="section bg-light">
+    <div class="container">
+      <div class="module-label"><span data-en="Final Assessment" data-ar="التقييم النهائي">Final Assessment</span></div>
+      <h2 class="section-title">
+        <span data-en="Knowledge Check — 10 Questions" data-ar="اختبار المعرفة — 10 أسئلة">Knowledge Check — 10 Questions</span>
+      </h2>
+      <p class="section-sub">
+        <span data-en="Test your understanding of everything covered in this training. You need 60% to pass."
+        data-ar="اختبر فهمك لكل ما تم تغطيته في هذا التدريب. تحتاج 60% لاجتياز الاختبار.">
+        Test your understanding of everything covered in this training. You need 60% to pass.
+        </span>
+      </p>
+
+      <div id="quiz-container" class="quiz-container">
+        <div class="quiz-progress">
+          <span id="quiz-counter"><span data-en="Question" data-ar="سؤال">Question</span> <span id="q-num">1</span>/10</span>
+          <span id="quiz-score" style="color:var(--primary)"><span data-en="Score" data-ar="النتيجة">Score</span>: <span id="q-score">0</span></span>
+        </div>
+        <div id="quiz-question" class="quiz-question"></div>
+        <div id="quiz-options" class="quiz-options"></div>
+        <div id="quiz-feedback" class="quiz-feedback"></div>
+        <button id="quiz-next" class="btn-primary" style="display:none">
+          <span data-en="Next &#8594;" data-ar="التالي &#8594;">Next &#8594;</span>
+        </button>
+      </div>
+
+      <div id="quiz-result" class="quiz-result" style="display:none">
+        <div id="result-icon" class="result-icon"></div>
+        <h3><span data-en="Assessment Complete!" data-ar="اكتمل التقييم!">Assessment Complete!</span></h3>
+        <p><span id="result-text"></span></p>
+        <button id="quiz-restart" class="btn-primary">
+          <span data-en="Restart Assessment" data-ar="إعادة التقييم">Restart Assessment</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMPLETION ===== -->
+  <section class="section" style="background:linear-gradient(135deg, #1b5e20, #2e7d32);color:var(--white);text-align:center">
+    <div class="container">
+      <h2 style="font-size:2rem;margin-bottom:16px">
+        <span data-en="You Have Completed the Training" data-ar="لقد أكملت التدريب">You Have Completed the Training</span>
+      </h2>
+      <p style="font-size:1.1rem;opacity:0.9;max-width:600px;margin:0 auto 24px">
+        <span data-en="Remember: Environmental responsibility is everyone's job — every day, in every decision, in every action."
+        data-ar="تذكر: المسؤولية البيئية هي وظيفة الجميع — كل يوم، في كل قرار، في كل إجراء.">
+        Remember: Environmental responsibility is everyone's job — every day, in every decision, in every action.
+        </span>
+      </p>
+      <a href="#module1" class="btn-primary" style="background:var(--white);color:var(--primary-dark)">
+        <span data-en="Review Training &#8593;" data-ar="مراجعة التدريب &#8593;">Review Training &#8593;</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <p>
+        <span data-en="OXA EMS — ISO 14001:2015 Employee Awareness Program" data-ar="OXA EMS — برنامج توعية الموظفين بالأيزو 14001:2015">OXA EMS — ISO 14001:2015 Employee Awareness Program</span>
+      </p>
+      <p style="font-size:0.85em;opacity:0.7;margin-top:8px">
+        <span data-en="All rights reserved to OXA &copy; 2026 — Owner: Omar Arafat" data-ar="جميع الحقوق محفوظة لـ OXA &copy; 2026 — المالك: عمر عرفات">All rights reserved to OXA &copy; 2026 — Owner: Omar Arafat</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
